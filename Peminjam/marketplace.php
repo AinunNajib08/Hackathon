@@ -1,12 +1,13 @@
 <?php
 include '../action/tukangshare.php';
 include '../action/koneksi.php';
-
 $namaadmin = $_SESSION['email'];
 $login = mysqli_query($koneksi,"select datainvestor.nama_lengkap, datainvestor.status from datainvestor where datainvestor.email='$namaadmin'");
 $data = mysqli_fetch_assoc($login);
 $nama = $data['nama_lengkap'];
 $status = $data['status'];
+$namaadmin = $_SESSION['email'];
+$result = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, description, dana, keuntungan, jw, grade  from umkm");
 
 ?>
 
@@ -232,13 +233,13 @@ $status = $data['status'];
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <i class="menu-icon mdi mdi-television"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="marketplace.php">
               <i class="menu-icon mdi mdi-chart-line"></i>
               <span class="menu-title">Marketplace</span>
             </a>
@@ -309,26 +310,44 @@ $status = $data['status'];
             <?php } else {
 
             } ?>
+<!--            call-->
+
           <div class="row">
+              <?php while($user_data = mysqli_fetch_array($result)) { ?>
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
               <div class="card card-statistics">
-                <div class="card-body">
+                <div class="card-body" >
                   <div class="clearfix">
-                    <div class="float-center text-center">
-                      <img src="screenshot.jpg" width="70px" height="70px" class="rounded-circle" style="margin-bottom: 10px;" >
-                      <p class="" style="margin-bottom: 1px;">Nama</p>
-                      <p class="" style="margin-bottom: 1px;">Kategory</p>
-                      <p class="" style="margin-bottom: 1px;">Tempat</p>
-                      <p class="" style="margin-bottom: 1px;">Filter</p>
+                    <div class="float-center text-center" >
+                      <img src="../img/i<?php echo $user_data['image']; ?>.jpg" width="70px" height="70px" class="rounded-circle" style="margin-bottom: 10px;" >
+                      <p class="" style="margin-bottom: 1px;"></p>
+                      <p class="" style="margin-bottom: 1px;"><?php echo $user_data['name']; ?></p>
+                      <p class="" style="margin-bottom: 1px;"><?php echo $user_data['alamat_lengkap']; ?></p>
+                      <p class="" ><?php echo $user_data['sektor']; ?></p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Description : </b><?php echo $user_data['description'];?>   </p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Dana : <?php $harga=number_format($user_data['dana'],0,",","."); echo "Rp. ".$harga?></b>  </p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Keuntungan : <?php $harga=number_format($user_data['keuntungan'],0,",","."); echo "Rp. ".$harga?> </b>  </p>
+                      <p class="text-left" ><b>Jangka Waktu : <?php echo $user_data['jw']?> Minggu</b>  </p>
                     </div>
+
+                      <a href="detail-market.php?id=<?php echo $user_data['id'] ?>">
+                          <div class="panel-footer">
+                              <span class="pull-left">Lihat Detail</span>
+                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                              <div class="clearfix"></div>
+                          </div>
+                      </a>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 65% lower growth
+                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> <?php echo $user_data['grade']?>% lower growth
                   </p>
                 </div>
               </div>
             </div>
+              <?php } ?>
           </div>
+
           <div class="row">
             <div class="col-lg-7 grid-margin stretch-card">
               <!--weather card-->
