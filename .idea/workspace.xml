@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3063405-a884-4546-8235-a5fbe2fca93d" name="Default Changelist" comment="" />
+    <list default="true" id="e3063405-a884-4546-8235-a5fbe2fca93d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Peminjam/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Peminjam/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/banner/banner-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/banner/banner-bg.jpg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +20,78 @@
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="1" />
+          <entry key="php" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="PHP" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="12" />
+          <entry key="php" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="12" />
+          <entry key="PHP" value="12" />
+        </counts>
+      </usages-collector>
     </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3">
+              <caret line="152" column="62" lean-forward="true" selection-start-line="152" selection-start-column="62" selection-end-line="152" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Peminjam/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="228" column="52" selection-start-line="228" selection-start-column="52" selection-end-line="228" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registrasi.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/action/login.php" />
+        <option value="$PROJECT_DIR$/Peminjam/index.html" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -27,11 +99,23 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/Peminjam/package.json" />
+      <path value="$PROJECT_DIR$/Peminjam/vendors/iconfonts/flag-icon-css/package.json" />
+      <path value="$PROJECT_DIR$/Peminjam/vendors/iconfonts/font-awesome/package.json" />
+      <path value="$PROJECT_DIR$/Peminjam/vendors/iconfonts/mdi/package.json" />
+      <path value="$PROJECT_DIR$/Peminjam/vendors/iconfonts/puse-icons-feather/package.json" />
+      <path value="$PROJECT_DIR$/Peminjam/vendors/iconfonts/simple-line-icon/package.json" />
+      <path value="$PROJECT_DIR$/Peminjam/vendors/iconfonts/ti-icons/package.json" />
+      <path value="$PROJECT_DIR$/Peminjam/vendors/tinymce/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
-    <option name="height" value="698" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -39,14 +123,30 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HACKTON" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HACKTON" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HACKTON" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HACKTON" type="462c0819:PsiDirectoryNode" />
+              <item name="Peminjam" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,15 +170,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553826425006</updated>
-      <workItem from="1553826426463" duration="277000" />
+      <workItem from="1553826426463" duration="3658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277000" />
+    <option name="totallyTimeSpent" value="3658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
@@ -106,5 +207,31 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/registrasi.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="152" column="62" lean-forward="true" selection-start-line="152" selection-start-column="62" selection-end-line="152" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Peminjam/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="228" column="52" selection-start-line="228" selection-start-column="52" selection-end-line="228" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
