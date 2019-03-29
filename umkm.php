@@ -101,7 +101,7 @@
                                 <div class="banner-content text-center justify-content-center">
                                     <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
-                                        <a class="btn-lg btn-secondary border border-white text-white " href="registrasi.php">Mulai Kerja</a>
+                                        <a class="btn-lg btn-secondary border border-white text-white " href="registrasi_umkm.php">Mulai Kerja</a>
                                     </div>
                                 </div>
                             </div>
@@ -139,7 +139,9 @@
                                 <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
                                     saya dikarenakan kian hari semakin mahal dan
                                     permintaan semakin banyak"</p>
+                                    <a href="#" class="btn btn-primary">kunjungi</a>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
