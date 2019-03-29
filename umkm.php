@@ -51,8 +51,8 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto nav-pills">
                             <li class="nav-item "><a class="nav-link" href="index.php">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="umkm.php">UMKM</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="investor.php">Investor</a></li>
+                            <li class="nav-item active""><a class=" nav-link" href="umkm.php">UMKM</a></li>
+                            <li class="nav-item "><a class=" nav-link" href="investor.php">Investor</a></li>
                             <li class="nav-item "><a class="nav-link" href="cara_kerja.php">Cara Kerja</a></li>
                             <li class="nav-item "><a class="nav-link" href="tentang_kami">Tentang Kami</a></li>
                             <li class="nav-item "><a class="nav-link font-weight-bold" href="login.php"> Login </a>
@@ -83,7 +83,7 @@
                         <div class="row single-slide align-items-center d-flex">
                             <div class="col-lg-12 col-md-12 justify-content-center">
                                 <div class="banner-content text-center justify-content-center">
-                                    <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
+                                    <h1 class="text-light"> UMKM adalah penopang<br>perekonomian bangsa</h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
                                         <a class="btn-lg btn-secondary border border-white text-white " href="registrasi.php">Mulai Investasi</a>
                                     </div>
@@ -120,69 +120,123 @@
 
     <section class="category-area mt-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <h1>Mulai Pendanaan</h1>
-                </div>
-                <div class="col-md-3 mr-3">
-                    <div class="row">
-                        <div class="card border border-warning" style="width: 18rem;">
-                            <div class="text-center">
-                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
-                            </div>
-                            <ul class="list-group list-group-flush border-top border-bottom border-warning">
-                                <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
-                                <li class="card-text text-center"> Pengrajin Kerang</li>
-                                <li class="card-text text-center"> Paiton, Probolinggo</li>
-                            </ul>
-                            <div class="card-body">
-                                <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
-                                    saya dikarenakan kian hari semakin mahal dan
-                                    permintaan semakin banyak"</p>
-                                    <a href="#" class="btn btn-primary">kunjungi</a>
-                                    
-                            </div>
-                            
-                        </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-5">
+                    <div class="sidebar-categories">
+                        <div class="head">Browse Categories</div>
+                        <ul class="main-categories">
+                            <li class="main-nav-list"><a data-toggle="collapse" href="#fruitsVegetable" aria-expanded="false" aria-controls="fruitsVegetable"><span class="lnr lnr-arrow-right"></span>Pendidikan</a>
+                            </li>
+                            <li class="main-nav-list"><a data-toggle="collapse" href="#meatFish" aria-expanded="false" aria-controls="meatFish"><span class="lnr lnr-arrow-right"></span>Pertanian</a>
+                            </li>
+                            <li class="main-nav-list"><a data-toggle="collapse" href="#cooking" aria-expanded="false" aria-controls="cooking"><span class="lnr lnr-arrow-right"></span>Industri Rumah
+                                    Tangga</a>
+                            </li>
+                            <li class="main-nav-list"><a data-toggle="collapse" href="#cooking" aria-expanded="false" aria-controls="cooking"><span class="lnr lnr-arrow-right"></span>Perkebunan</a>
+                            </li>
+                            <li class="main-nav-list"><a data-toggle="collapse" href="#cooking" aria-expanded="false" aria-controls="cooking"><span class="lnr lnr-arrow-right"></span>Jasa</a>
+                            </li>
                     </div>
                 </div>
-                <div class="col-md-3 mr-3">
-                    <div class="row">
-                        <div class="card border border-warning" style="width: 18rem;">
-                            <div class="text-center">
-                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
-                            </div>
-                            <ul class="list-group list-group-flush border-top border-bottom border-warning">
-                                <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
-                                <li class="card-text text-center"> Pengrajin Kerang</li>
-                                <li class="card-text text-center"> Paiton, Probolinggo</li>
-                            </ul>
-                            <div class="card-body">
-                                <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
-                                    saya dikarenakan kian hari semakin mahal dan
-                                    permintaan semakin banyak"</p>
-                            </div>
+                <div class="col-xl-9 col-lg-8 col-md-7">
+                    <!-- Start Filter Bar -->
+                    <div class="filter-bar d-flex flex-wrap align-items-center mb-3 ">
+                        <div class="sorting mr-auto">
+                            <select>
+                                <option value="1">Show 12</option>
+                                <option value="1">Show 12</option>
+                                <option value="1">Show 12</option>
+                            </select>
+                        </div>
+                        <div class="pagination">
+                            <a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                            <a href="#">6</a>
+                            <a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 mr-3">
-                    <div class="row">
-                        <div class="card border border-warning" style="width: 18rem;">
-                            <div class="text-center">
-                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
+                    <!-- End Filter Bar -->
+                    <!-- Start Best Seller -->
+                    <section class="lattest-product-area pb-40 category-list">
+                        <div class="row justify-content-around container">
+                            <div class="col-lg-3 col-md-3">
+                                <div class="card border border-warning" style="width: 15rem;">
+                                    <div class="text-center">
+                                        <img src="img/img1.jpg" style="width: 100pt" class="card-img-top pt-2 pb-2" alt="...">
+                                    </div>
+                                    <ul class="list-group list-group-flush border-top border-bottom border-warning">
+                                        <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
+                                        <li class="card-text text-center"> Pengrajin Kerang</li>
+                                        <li class="card-text text-center"> Paiton, Probolinggo</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
+                                            saya dikarenakan kian hari semakin mahal dan
+                                            permintaan semakin banyak"</p>
+                                    </div>
+                                </div>
                             </div>
-                            <ul class="list-group list-group-flush border-top border-bottom border-warning">
-                                <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
-                                <li class="card-text text-center"> Pengrajin Kerang</li>
-                                <li class="card-text text-center"> Paiton, Probolinggo</li>
-                            </ul>
-                            <div class="card-body">
-                                <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
-                                    saya dikarenakan kian hari semakin mahal dan
-                                    permintaan semakin banyak"</p>
+                            <div class="col-lg-3 col-md-3">
+                                <div class="card border border-warning" style="width: 15rem;">
+                                    <div class="text-center">
+                                        <img src="img/img1.jpg" style="width: 100pt" class="card-img-top pt-2 pb-2" alt="...">
+                                    </div>
+                                    <ul class="list-group list-group-flush border-top border-bottom border-warning">
+                                        <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
+                                        <li class="card-text text-center"> Pengrajin Kerang</li>
+                                        <li class="card-text text-center"> Paiton, Probolinggo</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
+                                            saya dikarenakan kian hari semakin mahal dan
+                                            permintaan semakin banyak"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single product -->
+                            <div class="col-lg-3 col-md-3">
+                                <div class="card border border-warning" style="width: 15rem;">
+                                    <div class="text-center">
+                                        <img src="img/img1.jpg" style="width: 100pt" class="card-img-top pt-2 pb-2" alt="...">
+                                    </div>
+                                    <ul class="list-group list-group-flush border-top border-bottom border-warning">
+                                        <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
+                                        <li class="card-text text-center"> Pengrajin Kerang</li>
+                                        <li class="card-text text-center"> Paiton, Probolinggo</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
+                                            saya dikarenakan kian hari semakin mahal dan
+                                            permintaan semakin banyak"</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </section>
+                    <!-- End Best Seller -->
+                    <!-- Start Filter Bar -->
+                    <div class="filter-bar d-flex flex-wrap align-items-center mt-3 mb-4">
+                        <div class="sorting mr-auto">
+                            <select>
+                                <option value="1">Show 12</option>
+                                <option value="1">Show 12</option>
+                                <option value="1">Show 12</option>
+                            </select>
+                        </div>
+                        <div class="pagination">
+                            <a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+                            <a href="#">6</a>
+                            <a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
                     </div>
+                    <!-- End Filter Bar -->
                 </div>
             </div>
         </div>
