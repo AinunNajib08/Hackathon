@@ -83,7 +83,7 @@
                         <div class="row single-slide align-items-center d-flex">
                             <div class="col-lg-12 col-md-12 justify-content-center">
                                 <div class="banner-content text-center justify-content-center">
-                                    <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
+                                    <h1 class="text-light"> UMKM adalah penopang<br>perekonomian bangsa</h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
                                         <a class="btn-lg btn-secondary border border-white text-white " href="registrasi.php">Mulai Investasi</a>
                                     </div>
