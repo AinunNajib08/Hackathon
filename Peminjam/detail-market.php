@@ -8,11 +8,15 @@ $data = mysqli_fetch_assoc($login);
 $nama = $data['nama_lengkap'];
 $status = $data['status'];
 $result = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, description, dana, keuntungan, jw, grade, tujuan  from umkm where id='$id'");
-$detail = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, description, dana, keuntungan, jw, grade, tujuan, jp  from umkm where id='$id'");
+$detail = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, description, dana, keuntungan, jw, grade, tujuan, jp, angsuran, tanggal, perbulan  from umkm where id='$id'");
 $detaildata = mysqli_fetch_assoc($detail);
 $tujuan = $detaildata['tujuan'];
 $jw = $detaildata['jw'];
 $jp = $detaildata['jp'];
+$tanggal = $detaildata['tanggal'];
+$perbulan = $detaildata['perbulan'];
+$perkejaan = $detaildata['pekerjaan'];
+$angsuran=number_format($detaildata['angsuran'],0,",",".");
 ?>
 
 <!DOCTYPE html>
@@ -349,12 +353,12 @@ $jp = $detaildata['jp'];
                   <div class="card-body">
                       <div class="row">
                           <div class="col-4 ">
-                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Description </b></p>
+                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Dana </b></p>
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
                               <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Jangka Waktu </b></p>
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo $jw." Minggu";?>   </p>
-                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Description </b></p>
-                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
+                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Tanggal Bergabung </b></p>
+                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo $tanggal;?>   </p>
                               <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
                           </div>
@@ -363,18 +367,18 @@ $jp = $detaildata['jp'];
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$keuntungan;?>   </p>
                               <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Jadwal Pencairan </b></p>
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo $jp." Hari Lagi";?>   </p>
-                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Description </b></p>
-                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
+                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Penghasilan Bulanan </b></p>
+                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$perbulan;?>   </p>
                               <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
                           </div>
                           <div class="col-4 ">
                               <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Tujuan </b></p>
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo $tujuan;?>   </p>
-                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Keuntungan </b></p>
-                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
-                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Description </b></p>
-                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
+                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Angsuran Mingguan </b></p>
+                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$angsuran;?>   </p>
+                              <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><b>Pekerjaan </b></p>
+                              <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo $pekerjaan;?>   </p>
                               <p class="text-left" style="margin-bottom: 1px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
                               <p class="text-left" style="margin-bottom: 80px; font-size: 15px;"><?php echo "Rp. ".$harga;?>   </p>
                           </div>

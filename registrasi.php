@@ -67,6 +67,7 @@
             <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
                 <div class="col-first">
                     <h1>Registrasi Investor</h1>
+
                     <nav class="d-flex align-items-center">
                         <a href="index.html"><span class=""></span></a>
                         <a href="category.html"></a>

@@ -291,24 +291,50 @@
                 </div>
             </div>
 
-    </footer> <!-- End footer Area -->
+            <!-- Start category Area -->
+            <footer class="bg-dark  mt-5 pt-3 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 class="text-white">Tentang Kami</h1>
+                            <a class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione eaque
+                                labore
+                                totam. Optio facilis accusamus adipisci cupiditate molestiae, cumque dolore assumenda natus
+                                dicta alias, provident nostrum dolor omnis ipsam.</a>
+                        </div>
+                        <div class="col-md-6 text-white">
+                            <h1 class="text-white">MUDI</h1>
+                            <a>Jl. Merpati, Jember</a><br>
+                            <a>085230737515</a><br>
+                            <a>support.mudi@gmail.com</a>
+                        </div>
+                    </div>
 
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
-    </script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/countdown.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <!--gmaps Js-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE">
-    </script>
-    <script src="js/gmaps.min.js"></script>
-    <script src="js/main.js"></script>
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-3">
+                            <a class="text-white">Copyright 2019 </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            <!-- End footer Area -->
+
+            <script src="js/vendor/jquery-2.2.4.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+            </script>
+            <script src="js/vendor/bootstrap.min.js"></script>
+            <script src="js/jquery.ajaxchimp.min.js"></script>
+            <script src="js/jquery.nice-select.min.js"></script>
+            <script src="js/jquery.sticky.js"></script>
+            <script src="js/nouislider.min.js"></script>
+            <script src="js/countdown.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <!--gmaps Js-->
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+            <script src="js/gmaps.min.js"></script>
+            <script src="js/main.js"></script>
 </body>
 
 </html> 
