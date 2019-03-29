@@ -130,24 +130,72 @@
 
 	<!-- start features Area -->
 	<section class="features-area section_gap">
+    <section class="category-area">
 		<div class="container">
-			
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-                <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-            </div>
-            </div>
+			<div class="row justify-content-center">
+				<div class="col-lg-12 text-center">
+					<h1>Mulai Pendanaan</h1>
+				</div>
+				<div class="col-md-3 mr-3">
+					<div class="row">
+						<div class="card border border-warning" style="width: 18rem;">
+							<div class="text-center">
+								<img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
+							</div>
+							<ul class="list-group list-group-flush border-top border-bottom border-warning">
+								<li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
+								<li class="card-text text-center"> Pengrajin Kerang</li>
+								<li class="card-text text-center"> Paiton, Probolinggo</li>
+							</ul>
+							<div class="card-body">
+								<p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
+									saya dikarenakan kian hari semakin mahal dan
+									permintaan semakin banyak"</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mr-3">
+					<div class="row">
+						<div class="card border border-warning" style="width: 18rem;">
+							<div class="text-center">
+								<img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
+							</div>
+							<ul class="list-group list-group-flush border-top border-bottom border-warning">
+								<li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
+								<li class="card-text text-center"> Pengrajin Kerang</li>
+								<li class="card-text text-center"> Paiton, Probolinggo</li>
+							</ul>
+							<div class="card-body">
+								<p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
+									saya dikarenakan kian hari semakin mahal dan
+									permintaan semakin banyak"</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 mr-3">
+					<div class="row">
+						<div class="card border border-warning" style="width: 18rem;">
+							<div class="text-center">
+								<img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
+							</div>
+							<ul class="list-group list-group-flush border-top border-bottom border-warning">
+								<li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
+								<li class="card-text text-center"> Pengrajin Kerang</li>
+								<li class="card-text text-center"> Paiton, Probolinggo</li>
+							</ul>
+							<div class="card-body">
+								<p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
+									saya dikarenakan kian hari semakin mahal dan
+									permintaan semakin banyak"</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 		</div>
 	</section>
 	<!-- end features Area -->
