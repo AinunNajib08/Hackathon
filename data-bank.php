@@ -1,3 +1,9 @@
+<?php
+
+$id = $_GET['id'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 
@@ -31,6 +37,11 @@
 </head>
 
 <body>
+    <?php
+    include "action/koneksi.php";
+    $sql = "select * from bank";
+    $result = mysqli_query($koneksi,$sql);
+    ?>
 
     <!-- Start Header Area -->
     <header class="header_area sticky-header">
@@ -117,32 +128,30 @@
     <section class="tracking_box_area section_gap">
         <div class="container">
             <div class="tracking_box_inner">
-                <p>To track your order please enter your Order ID in the box below and press the "Track" button. This
-                    was given to you on your receipt and in the confirmation email you should have received.</p>
-                <form class="row tracking_form" action="action/regis.php" method="post" novalidate="novalidate">
+                <p><?php echo $id?> </p>
+                <form class="row tracking_form" action="action/bank.php?id=<?php echo $id?>" method="post" novalidate="novalidate">
                     <div class="col-md-12 form-group">
-                        <label for="namalengkap">Nama Lengkap *</label>
-                        <input type="text" class="form-control" id="namalengkap" name="namalengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
-                    </div>
-                    <div class="col-md-12 form-group">
-                        <label for="namalengkap">Alamat Email *</label>
-                        <input type="email" class="form-control" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Billing Email Address'">
-                    </div>
-                    <div class="col-md-12 form-group">
-                        <label for="namalengkap">Password *</label>
-                        <input type="text" class="form-control" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
-                    </div>
-                    <div class="col-md-12 form-group">
-                        <label for="namalengkap">Nomor Handphone *</label>
-                        <input type="text" class="form-control" id="no_hp" name="no_hp" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
-                    </div>
-                    <div class="col-md-12 form-group">
-                        <label for="namalengkap">Nomor Handphone *</label>
+                        <label for="namalengkap">Nama Bank *</label>
                         <select name="bank" id="bank" class="form-control" required oninvalid="this.setCustomValidity('Silahkan Pilih')" oninput="setCustomValidity('')">
                             <option value="">--Pilih--</option>
-                            <option value="002">BANK BRI</option>
-
+                            <?php
+                            while($row=mysqli_fetch_assoc($result)){
+                                echo'<option value="'.$row['kode_bank'].'">'.$row['Nama_bank'].'</option>';
+                            }
+                            ?>
                         </select>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label for="namalengkap">Cabang *</label>
+                        <input type="text" class="form-control" id="cabang" name="cabang" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Billing Email Address'">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label for="namalengkap">No Rekening *</label>
+                        <input type="text" class="form-control" id="norek" name="norek" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label for="namalengkap">Nama Pemilik Rekening *</label>
+                        <input type="text" class="form-control" id="pemrek" name="pemrek" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
                     </div>
                     <div class="col-md-12 form-group">
                         <button type="submit" value="submit" class="primary-btn" name="daftar">Track Order</button>

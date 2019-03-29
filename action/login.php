@@ -12,7 +12,6 @@ $password = $_POST['password'];
 
 // menyeleksi data user dengan username dan password yang sesuai
 $login = mysqli_query($koneksi, "SELECT * from datainvestor where email='$email' and password='$password'");
-// menghitung jumlah data yang ditemukan
 $cek = mysqli_num_rows($login);
 
 // cek apakah username dan password di temukan pada database
@@ -29,7 +28,7 @@ if ($cek > 0) {
         header("location:../pages/siswa/pages/");
     } else if ($data['level'] == "investor") {
         // buat session login dan username
-        $_SESSION['email'] = $username;
+        $_SESSION['email'] = $email;
         $_SESSION['level'] = "investor";
         // alihkan ke halaman dashboard pegawai
         header("location:../peminjam");
