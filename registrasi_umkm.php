@@ -121,16 +121,16 @@
                     was given to you on your receipt and in the confirmation email you should have received.</p>
                 <form class="row tracking_form" action="action/regis.php" method="post" novalidate="novalidate">
                     <div class="col-md-12 form-group">
-                        <label for="namalengkap">Nama Lengkap *</label>
+                        <label for="namal">NamaLengkap *</label>
                         <input type="text" class="form-control" id="namalengkap" name="namalengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
                     </div>
                     <div class="col-md-12 form-group">
-                        <label for="namalengkap">Alamat Email *</label>
-                        <input type="email" class="form-control" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Billing Email Address'">
+                        <label for="namalengkap">Alamat *</label>
+                        <input type="alamat_lengkap" class="form-control" id="alamat_lengkap" name="alamat_lengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Billing Email Address'">
                     </div>
                     <div class="col-md-12 form-group">
-                        <label for="namalengkap">Password *</label>
-                        <input type="text" class="form-control" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
+                        <label for="namalengkap">email *</label>
+                        <input type="email" class="form-control" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
                     </div>
                     <div class="col-md-12 form-group">
                         <label for="namalengkap">Nomor Handphone *</label>
@@ -138,11 +138,7 @@
                     </div>
                     <div class="col-md-12 form-group">
                         <label for="namalengkap">Nomor Handphone *</label>
-                        <select name="bank" id="bank" class="form-control" required oninvalid="this.setCustomValidity('Silahkan Pilih')" oninput="setCustomValidity('')">
-                            <option value="">--Pilih--</option>
-                            <option value="002">BANK BRI</option>
-
-                        </select>
+                        <input type="text" class="form-control" id="no_hp" name="no_hp" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
                     </div>
                     <div class="col-md-12 form-group">
                         <button type="submit" value="submit" class="primary-btn" name="daftar">Track Order</button>

@@ -86,7 +86,7 @@
 									<h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
 									<div class="add-bag d-flex align-items-center text-center justify-content-center">
 										<a class="btn-lg btn-secondary border border-white text-white "
-											href="registrasi.php">Mulai Investasi</a>
+											href="registrasi_umkm.php">Mulai Investasi</a>
 									</div>
 								</div>
 							</div>
@@ -104,13 +104,13 @@
 
 									<div class="add-bag d-flex align-items-center text-center">
 										<a class="btn btn-warning text-dark font-weight-bold"
-											href="registrasi.php">Registrasi</a>
+											href="registrasi_umkm.php">Registrasi</a>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="img/banner/banner-img.png" alt="">
+									<img class="img-fluid" src="" alt="">
 								</div>
 							</div>
 						</div>
