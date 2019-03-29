@@ -41,7 +41,7 @@
             <nav class="navbar navbar-expand-lg navbar-light main_box">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -50,7 +50,7 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto nav-pills">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
                             <li class="nav-item "><a class="nav-link" href="umkm.php">UMKM</a></li>
                             <li class="nav-item "><a class="nav-link" href="investor.php">Investor</a></li>
                             <li class="nav-item "><a class="nav-link" href="cara_kerja.php">Cara Kerja</a></li>
@@ -85,7 +85,7 @@
                                 <div class="banner-content text-center justify-content-center">
                                     <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
-                                        <a class="btn-lg btn-secondary border border-white text-white " href="registrasi.php">Mulai Investasi</a>
+                                        <a class="btn-lg btn-secondary border border-white text-white rounded-pill " href="registrasi.php">Mulai Investasi</a>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@
                                 <div class="banner-content text-center justify-content-center">
                                     <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
-                                        <a class="btn-lg btn-secondary border border-white text-white " href="registrasi.php">Mulai Kerja</a>
+                                        <a class="btn-lg btn-secondary border border-white text-white rounded-pill" href="registrasi.php">Mulai Kerja</a>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +121,7 @@
     <!-- start features Area -->
     <section class="features-area section_gap">
         <div class="container">
-            <div class="row">
+            <div class="row features-inner">
                 <!-- single features -->
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-features">
@@ -165,7 +165,7 @@
                     <div class="row">
                         <div class="card border border-warning" style="width: 18rem;">
                             <div class="text-center">
-                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
+                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2 rounded-circle" alt="...">
                             </div>
                             <ul class="list-group list-group-flush border-top border-bottom border-warning">
                                 <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
@@ -185,7 +185,7 @@
                     <div class="row">
                         <div class="card border border-warning" style="width: 18rem;">
                             <div class="text-center">
-                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
+                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2 rounded-circle" alt="...">
                             </div>
                             <ul class="list-group list-group-flush border-top border-bottom border-warning">
                                 <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
@@ -204,7 +204,7 @@
                     <div class="row">
                         <div class="card border border-warning" style="width: 18rem;">
                             <div class="text-center">
-                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2" alt="...">
+                                <img src="img/img1.jpg" style="width: 150pt" class="card-img-top pt-2 pb-2 rounded-circle" alt="...">
                             </div>
                             <ul class="list-group list-group-flush border-top border-bottom border-warning">
                                 <li class="card-text text-center font-weight-bold">Muammar Khadafi</li>
@@ -233,7 +233,7 @@
                             <div class="row">
                                 <div class="col-md-3">
 
-                                    <img src="img/img1.jpg" style="width: 70pt" class="card-img-top" alt="...">
+                                    <img src="img/img1.jpg" style="width: 70pt" class="card-img-top rounded-circle" alt="...">
                                 </div>
                                 <div class="col-md-9">
                                     <h5 class="card-title">Budi Yunior Valentino</h5>
@@ -253,7 +253,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-3">
-                                    <img src="img/img1.jpg" style="width: 70pt" class="card-img-top" alt="...">
+                                    <img src="img/img1.jpg" style="width: 70pt" class="card-img-top rounded-circle" alt="...">
                                 </div>
                                 <div class="col-md-9">
                                     <h5 class="card-title">Budi Yunior Valentino</h5>
@@ -280,11 +280,17 @@
                         totam. Optio facilis accusamus adipisci cupiditate molestiae, cumque dolore assumenda natus
                         dicta alias, provident nostrum dolor omnis ipsam.</a>
                 </div>
-                <div class="col-md-6 text-white">
+                <div class="col-md-2 text-white">
                     <h1 class="text-white">MUDI</h1>
                     <a>Jl. Merpati, Jember</a><br>
                     <a>085230737515</a><br>
                     <a>support.mudi@gmail.com</a>
+                </div>
+                <div class="col-md-4 text-white">
+                    <h3 class="text-white">Bekerja Sama dengan:</h3>
+                    <div class="text-center">
+                        <img src="img/1.png" alt="" style="width :120pt">
+                    </div>
                 </div>
             </div>
 
@@ -293,7 +299,7 @@
                     <a class="text-white">Copyright 2019 </a>
                 </div>
             </div>
-        </div>
+
     </footer> <!-- End footer Area -->
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>

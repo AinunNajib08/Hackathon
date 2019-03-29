@@ -41,7 +41,7 @@
             <nav class="navbar navbar-expand-lg navbar-light main_box">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -51,8 +51,8 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto nav-pills">
                             <li class="nav-item "><a class="nav-link" href="index.php">Home</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="umkm.php">UMKM</a></li>
-                            <li class="nav-item "><a class="nav-link" href="investor.php">Investor</a></li>
+                            <li class="nav-item"><a class="nav-link" href="umkm.php">UMKM</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="investor.php">Investor</a></li>
                             <li class="nav-item "><a class="nav-link" href="cara_kerja.php">Cara Kerja</a></li>
                             <li class="nav-item "><a class="nav-link" href="tentang_kami">Tentang Kami</a></li>
                             <li class="nav-item "><a class="nav-link font-weight-bold" href="login.php"> Login </a>
@@ -187,7 +187,7 @@
             </div>
         </div>
     </section>
-    <footer class="bg-dark  mt-5 pt-3 pb-5">
+    <footer class="bg-dark  mt-5 pt-3 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -197,19 +197,25 @@
                         totam. Optio facilis accusamus adipisci cupiditate molestiae, cumque dolore assumenda natus
                         dicta alias, provident nostrum dolor omnis ipsam.</a>
                 </div>
-                <div class="col-md-6 text-white">
+                <div class="col-md-2 text-white">
                     <h1 class="text-white">MUDI</h1>
                     <a>Jl. Merpati, Jember</a><br>
                     <a>085230737515</a><br>
                     <a>support.mudi@gmail.com</a>
                 </div>
+                <div class="col-md-4 text-white">
+                    <h3 class="text-white">Bekerja Sama dengan:</h3>
+                    <div class="text-center">
+                        <img src="img/1.png" alt="" style="width :120pt">
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- <div class="row">
-			<div class="col-md-10 text-center mt-3">
-				<a class="text-white">Copyright 2019 </a>
-			</div>
-		</div> -->
+
+            <div class="row">
+                <div class="col-md-12 text-center mt-3">
+                    <a class="text-white">Copyright 2019 </a>
+                </div>
+            </div>
 
     </footer>
 
