@@ -140,6 +140,7 @@
                                     saya dikarenakan kian hari semakin mahal dan
                                     permintaan semakin banyak"</p>
                                     <a href="#" class="btn btn-primary">kunjungi</a>
+                                    
                             </div>
                             
                         </div>
