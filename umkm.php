@@ -76,22 +76,17 @@
 	<!-- start banner Area -->
 	<section class="banner-area">
 		<div class="container">
-			<div class="row fullscreen align-items-center justify-content-start">
+			<div class="row fullscreen align-items-center justify-content-center">
 				<div class="col-lg-12">
 					<div class="active-banner-slider owl-carousel">
 						<!-- single-slide -->
 						<div class="row single-slide align-items-center d-flex">
-							<div class="col-lg-5 col-md-6">
-								<div class="banner-content">
-									<h1 class="text-light"> UMKM adalah<br>penopang perekonomian Indonesia</h1>
-
-									<div class="add-bag d-flex align-items-center">
-										<a class="btn  btn-warning text-dark font-weight-bold"
-											href="login.php">Login</a>
-									</div>
-									<div class="add-bag d-flex align-items-center">
-										<a class="btn btn-warning text-dark font-weight-bold"
-											href="registrasi.php">Registrasi</a>
+							<div class="col-lg-12 col-md-12 justify-content-center">
+								<div class="banner-content text-center justify-content-center">
+									<h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
+									<div class="add-bag d-flex align-items-center text-center justify-content-center">
+										<a class="btn-lg btn-secondary border border-white text-white "
+											href="registrasi.php">Mulai Investasi</a>
 									</div>
 								</div>
 							</div>
@@ -102,16 +97,14 @@
 							</div>
 						</div>
 						<!-- single-slide -->
-						<div class="row single-slide">
-							<div class="col-lg-5">
-								<div class="banner-content">
-									<h1>Nike New <br>Collection!</h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-										incididunt ut labore et
-										dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-									<div class="add-bag d-flex align-items-center">
-										<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-										<span class="add-text text-uppercase">Add to Bag</span>
+						<div class="row single-slide align-items-center d-flex">
+							<div class="col-lg-12 col-md-12 justify-content-center">
+								<div class="banner-content text-center justify-content-center">
+									<h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
+
+									<div class="add-bag d-flex align-items-center text-center">
+										<a class="btn btn-warning text-dark font-weight-bold"
+											href="registrasi.php">Registrasi</a>
 									</div>
 								</div>
 							</div>
