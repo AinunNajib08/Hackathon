@@ -7,7 +7,7 @@ $data = mysqli_fetch_assoc($login);
 $nama = $data['nama_lengkap'];
 $status = $data['status'];
 $namaadmin = $_SESSION['email'];
-$result = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, description  from umkm");
+$result = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, description, dana, keuntungan, jw, grade  from umkm");
 
 ?>
 
@@ -325,12 +325,12 @@ $result = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, d
                       <p class="" style="margin-bottom: 1px;"><?php echo $user_data['alamat_lengkap']; ?></p>
                       <p class="" ><?php echo $user_data['sektor']; ?></p>
                       <p class="text-left" style="margin-bottom: 1px;"><b>Description : </b><?php echo $user_data['description'];?>   </p>
-                      <p class="text-left" style="margin-bottom: 1px;"><b>Dana :</b>  </p>
-                      <p class="text-left" style="margin-bottom: 1px;"><b>Keuntungan :</b>  </p>
-                      <p class="text-left" ><b>Jangka Waktu :</b>  </p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Dana : <?php $harga=number_format($user_data['dana'],0,",","."); echo "Rp. ".$harga?></b>  </p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Keuntungan : <?php $harga=number_format($user_data['keuntungan'],0,",","."); echo "Rp. ".$harga?> </b>  </p>
+                      <p class="text-left" ><b>Jangka Waktu : <?php echo $user_data['jw']?> Minggu</b>  </p>
                     </div>
 
-                      <a href="total-booking.php">
+                      <a href="detail-market.php?id=<?php echo $user_data['id'] ?>">
                           <div class="panel-footer">
                               <span class="pull-left">Lihat Detail</span>
                               <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
@@ -340,7 +340,7 @@ $result = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, d
                       </a>
                   </div>
                   <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 65% lower growth
+                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> <?php echo $user_data['grade']?>% lower growth
                   </p>
                 </div>
               </div>
