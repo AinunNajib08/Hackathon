@@ -51,11 +51,11 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto nav-pills">
                             <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item "><a class="nav-link" href="index.html">UMKM</a></li>
-                            <li class="nav-item "><a class="nav-link" href="index.html">Investor</a></li>
-                            <li class="nav-item "><a class="nav-link" href="index.html">Cara Kerja</a></li>
-                            <li class="nav-item "><a class="nav-link" href="index.html">Tentang Kami</a></li>
-                            <li class="nav-item "><a class="nav-link font-weight-bold" href="index.html"> Login </a>
+                            <li class="nav-item "><a class="nav-link" href="umkm.php">UMKM</a></li>
+                            <li class="nav-item "><a class="nav-link" href="investor.php">Investor</a></li>
+                            <li class="nav-item "><a class="nav-link" href="cara_kerja.php">Cara Kerja</a></li>
+                            <li class="nav-item "><a class="nav-link" href="tentang_kami">Tentang Kami</a></li>
+                            <li class="nav-item "><a class="nav-link font-weight-bold" href="login.php"> Login </a>
                             </li>
                     </div>
                 </div>
