@@ -309,7 +309,6 @@
                             <a>support.mudi@gmail.com</a>
                         </div>
                     </div>
-
                     <div class="row">
                         <div class="col-md-12 text-center mt-3">
                             <a class="text-white">Copyright 2019 </a>
@@ -317,9 +316,7 @@
                     </div>
                 </div>
             </footer>
-
             <!-- End footer Area -->
-
             <script src="js/vendor/jquery-2.2.4.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
             </script>
