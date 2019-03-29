@@ -7,7 +7,7 @@ $data = mysqli_fetch_assoc($login);
 $nama = $data['nama_lengkap'];
 $status = $data['status'];
 $namaadmin = $_SESSION['email'];
-$result = mysqli_query($koneksi,"select id,name,image from umkm");
+$result = mysqli_query($koneksi,"select id,name,alamat_lengkap ,sektor, image, description  from umkm");
 
 ?>
 
@@ -233,13 +233,13 @@ $result = mysqli_query($koneksi,"select id,name,image from umkm");
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <i class="menu-icon mdi mdi-television"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="marketplace.php">
               <i class="menu-icon mdi mdi-chart-line"></i>
               <span class="menu-title">Marketplace</span>
             </a>
@@ -316,15 +316,20 @@ $result = mysqli_query($koneksi,"select id,name,image from umkm");
               <?php while($user_data = mysqli_fetch_array($result)) { ?>
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
               <div class="card card-statistics">
-                <div class="card-body" href="google.com">
+                <div class="card-body" >
                   <div class="clearfix">
                     <div class="float-center text-center" >
                       <img src="../img/i<?php echo $user_data['image']; ?>.jpg" width="70px" height="70px" class="rounded-circle" style="margin-bottom: 10px;" >
                       <p class="" style="margin-bottom: 1px;"></p>
                       <p class="" style="margin-bottom: 1px;"><?php echo $user_data['name']; ?></p>
-                      <p class="" style="margin-bottom: 1px;"><?php echo $user_data['image']; ?></p>
-                      <p class="" style="margin-bottom: 1px;">Filter</p>
+                      <p class="" style="margin-bottom: 1px;"><?php echo $user_data['alamat_lengkap']; ?></p>
+                      <p class="" ><?php echo $user_data['sektor']; ?></p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Description : </b><?php echo $user_data['description'];?>   </p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Dana :</b>  </p>
+                      <p class="text-left" style="margin-bottom: 1px;"><b>Keuntungan :</b>  </p>
+                      <p class="text-left" ><b>Jangka Waktu :</b>  </p>
                     </div>
+
                       <a href="total-booking.php">
                           <div class="panel-footer">
                               <span class="pull-left">Lihat Detail</span>
