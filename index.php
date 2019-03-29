@@ -116,9 +116,46 @@
             </div>
         </div>
     </section>
+    <!-- End banner Area -->
 
+    <!-- start features Area -->
+    <section class="features-area section_gap">
+        <div class="container">
+            <div class="row">
+                <!-- single features -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-features">
+                        <div class="f-icon">
+                            <img style="width: 30px;" src=" img/friends.png" alt="">
+                        </div>
+                        <h6>Pendana dan <br> Penerima Terpercaya</h6>
+                    </div>
+                </div>
+                <!-- single features -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-features">
+                        <div class="f-icon">
+                            <img src="img/features/f-icon3.png" alt="">
+                        </div>
+                        <h6>Support 24 jam <br> melayani user</h6>
+                    </div>
+                </div>
+                <!-- single features -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-features">
+                        <div class="f-icon">
+                            <img src="img/features/f-icon4.png" alt="">
+                        </div>
+                        <h6>Transakasi aman <br> dan terpercaya</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end features Area -->
 
-    <section class="category-area mt-5">
+    <!-- Start category Area -->
+    <section class="category-area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
@@ -184,7 +221,55 @@
             </div>
         </div>
     </section>
-    <footer class="bg-dark  mt-5 pt-3 pb-5">
+    <!-- End category Area -->
+    <section>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h1>Pendapat Investor</h1>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+
+                                    <img src="img/img1.jpg" style="width: 70pt" class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-9">
+                                    <h5 class="card-title">Budi Yunior Valentino</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Obcaecati quos voluptatum dolor enim blanditiis cumque suscipit aspernatur sed
+                                        odio illo nostrum a impedit beatae dicta distinctio, maiores fugiat, quam
+                                        eveniet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1>Pendapat Mitra</h1>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="img/img1.jpg" style="width: 70pt" class="card-img-top" alt="...">
+                                </div>
+                                <div class="col-md-9">
+                                    <h5 class="card-title">Budi Yunior Valentino</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo,
+                                        aut obcaecati excepturi quisquam, quaerat ab earum eveniet soluta odio
+                                        necessitatibus perspiciatis. Minus mollitia suscipit quam eum repellendus
+                                        dolores quidem aut?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- start footer Area -->
+    <footer class="bg-dark  mt-5 pt-3 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -201,14 +286,14 @@
                     <a>support.mudi@gmail.com</a>
                 </div>
             </div>
-        </div>
-        <!-- <div class="row">
-			<div class="col-md-10 text-center mt-3">
-				<a class="text-white">Copyright 2019 </a>
-			</div>
-		</div> -->
 
-    </footer>
+            <div class="row">
+                <div class="col-md-12 text-center mt-3">
+                    <a class="text-white">Copyright 2019 </a>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- End footer Area -->
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
