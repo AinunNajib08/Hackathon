@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Karma Shop</title>
+    <title>MUDI</title>
 
     <!--
 		CSS
@@ -47,25 +47,16 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto nav-pills">
-                            <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item "><a class="nav-link" href="index.php">Home</a></li>
                             <li class="nav-item "><a class="nav-link" href="umkm.php">UMKM</a></li>
                             <li class="nav-item "><a class="nav-link" href="investor.php">Investor</a></li>
                             <li class="nav-item "><a class="nav-link" href="cara_kerja.php">Cara Kerja</a></li>
-                            <li class="nav-item "><a class="nav-link" href="tentang_kami">Tentang Kami</a></li>
-                            <li class="nav-item "><a class="nav-link font-weight-bold" href="login.php"> Login </a>
+                            <li class="nav-item "><a class="nav-link" href="tentang_kami.php">Tentang Kami</a></li>
+                            <li class="nav-item active"><a class="nav-link font-weight-bold" href="login.php"> Login </a>
                             </li>
                     </div>
                 </div>
             </nav>
-        </div>
-        <div class="search_input" id="search_input_box">
-            <div class="container">
-                <form class="d-flex justify-content-between">
-                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                    <button type="submit" class="btn"></button>
-                    <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
-                </form>
-            </div>
         </div>
     </header>
     <!-- End Header Area -->
@@ -94,7 +85,8 @@
                         <img class="img-fluid" src="img/login.jpg" alt="">
                         <div class="hover">
                             <h4>Belum Punya Akun?</h4>
-                            <a class="primary-btn" href="registrasi.php">Registrasi</a>
+                            <a class="primary-btn" href="registrasi.php">Registrasi Investor</a><br>
+                            <a class="primary-btn" href="registrasi_umkm.php">Registrasi UMKM</a>
                         </div>
                     </div>
                 </div>

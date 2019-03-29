@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Karma Shop</title>
+    <title>MUDI</title>
 
     <!--
             CSS
@@ -38,7 +38,7 @@
             <nav class="navbar navbar-expand-lg navbar-light main_box">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -51,23 +51,14 @@
                             <li class="nav-item "><a class="nav-link" href="umkm.php">UMKM</a></li>
                             <li class="nav-item "><a class="nav-link" href="investor.php">Investor</a></li>
                             <li class="nav-item "><a class="nav-link" href="cara_kerja.php">Cara Kerja</a></li>
-                            <li class="nav-item "><a class="nav-link" href="tentang_kami">Tentang Kami</a></li>
-                            <li class="nav-item active "><a class="nav-link font-weight-bold" href="login.php"> Login </a>
+                            <li class="nav-item "><a class="nav-link" href="tentang_kami.php">Tentang Kami</a></li>
+                            <li class="nav-item active"><a class="nav-link font-weight-bold" href="login.php"> Login </a>
                             </li>
                     </div>
                 </div>
             </nav>
         </div>
-        <div class="search_input" id="search_input_box">
-            <div class="container">
-                <form class="d-flex justify-content-between">
-                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                    <button type="submit" class="btn"></button>
-                    <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
-                </form>
-            </div>
-        </div>
-    </header>>
+    </header>
     <!-- End Header Area -->
 
     <!-- Start Banner Area -->
@@ -75,7 +66,7 @@
         <div class="container">
             <div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
                 <div class="col-first">
-                    <h1>DAFTAR UMKM</h1>
+                    <h1>Registrasi Investor</h1>
                     <nav class="d-flex align-items-center">
                         <a href="index.html"><span class=""></span></a>
                         <a href="category.html"></a>
@@ -94,22 +85,22 @@
                 <form class="row tracking_form" action="action/regis.php" method="post" novalidate="novalidate">
                     <div class="col-md-12 form-group">
                         <label for="namalengkap">Nama Lengkap *</label>
-                        <input type="text" class="form-control" id="namalengkap" name="namalengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
+                        <input type="text" required class="form-control" id="namalengkap" name="namalengkap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
                     </div>
                     <div class="col-md-12 form-group">
-                        <label for="namalengkap">Alamat Email *</label>
-                        <input type="email" class="form-control" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Billing Email Address'">
+                        <label for="namalengkap">Email *</label>
+                        <input required type="email" class="form-control" id="email" name="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Billing Email Address'">
                     </div>
                     <div class="col-md-12 form-group">
                         <label for="namalengkap">Password *</label>
-                        <input type="text" class="form-control" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
+                        <input required type="text" class="form-control" id="password" name="password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
                     </div>
                     <div class="col-md-12 form-group">
-                        <label for="namalengkap">umkm*</label>
-                        <input type="text" class="form-control" id="no_hp" name="no_hp" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
+                        <label for="namalengkap">Nomor Handphone*</label>
+                        <input required type="text" class="form-control" id="no_hp" name="no_hp" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama Lengkap'">
                     </div>
                     <div class="col-md-12 form-group">
-                        <button type="submit" value="submit" class="primary-btn" name="daftar">Lanjut</button>
+                        <button required type="submit" value="submit" class="primary-btn" name="daftar">Registrasi</button>
                     </div>
                 </form>
             </div>
@@ -128,11 +119,17 @@
                         totam. Optio facilis accusamus adipisci cupiditate molestiae, cumque dolore assumenda natus
                         dicta alias, provident nostrum dolor omnis ipsam.</a>
                 </div>
-                <div class="col-md-6 text-white">
+                <div class="col-md-2 text-white">
                     <h1 class="text-white">MUDI</h1>
                     <a>Jl. Merpati, Jember</a><br>
                     <a>085230737515</a><br>
                     <a>support.mudi@gmail.com</a>
+                </div>
+                <div class="col-md-4 text-white">
+                    <h3 class="text-white">Bekerja Sama dengan:</h3>
+                    <div class="text-center">
+                        <img src="img/1.png" alt="" style="width :120pt">
+                    </div>
                 </div>
             </div>
 
@@ -141,8 +138,8 @@
                     <a class="text-white">Copyright 2019 </a>
                 </div>
             </div>
-        </div>
-    </footer> <!-- End footer Area -->
+
+    </footer>
     <!-- End footer Area -->
 
 

@@ -51,24 +51,15 @@
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto nav-pills">
                             <li class="nav-item "><a class="nav-link" href="index.php">Home</a></li>
-                            <li class="nav-item active""><a class=" nav-link" href="umkm.php">UMKM</a></li>
-                            <li class="nav-item "><a class=" nav-link" href="investor.php">Investor</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="umkm.php">UMKM</a></li>
+                            <li class="nav-item "><a class="nav-link" href="investor.php">Investor</a></li>
                             <li class="nav-item "><a class="nav-link" href="cara_kerja.php">Cara Kerja</a></li>
-                            <li class="nav-item "><a class="nav-link" href="tentang_kami">Tentang Kami</a></li>
+                            <li class="nav-item "><a class="nav-link" href="tentang_kami.php">Tentang Kami</a></li>
                             <li class="nav-item "><a class="nav-link font-weight-bold" href="login.php"> Login </a>
                             </li>
                     </div>
                 </div>
             </nav>
-        </div>
-        <div class="search_input" id="search_input_box">
-            <div class="container">
-                <form class="d-flex justify-content-between">
-                    <input type="text" class="form-control" id="search_input" placeholder="Search Here">
-                    <button type="submit" class="btn"></button>
-                    <span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
-                </form>
-            </div>
         </div>
     </header>
     <!-- End Header Area -->
@@ -83,9 +74,9 @@
                         <div class="row single-slide align-items-center d-flex">
                             <div class="col-lg-12 col-md-12 justify-content-center">
                                 <div class="banner-content text-center justify-content-center">
-                                    <h1 class="text-light"> UMKM adalah penopang<br>perekonomian bangsa</h1>
+                                    <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
-                                        <a class="btn-lg btn-secondary border border-white text-white " href="registrasi.php">Mulai Investasi</a>
+                                        <a class="btn-lg btn-secondary border border-white text-white rounded-pill " href="registrasi.php">Mulai Investasi</a>
                                     </div>
                                 </div>
                             </div>
@@ -101,7 +92,7 @@
                                 <div class="banner-content text-center justify-content-center">
                                     <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
-                                        <a class="btn-lg btn-secondary border border-white text-white " href="registrasi_umkm.php">Mulai Kerja</a>
+                                        <a class="btn-lg btn-secondary border border-white text-white rounded-pill" href="registrasi_umkm.php">Mulai Kerja</a>
                                     </div>
                                 </div>
                             </div>
