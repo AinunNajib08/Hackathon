@@ -1,12 +1,13 @@
 <?php
 include '../action/tukangshare.php';
 include '../action/koneksi.php';
-
 $namaadmin = $_SESSION['email'];
 $login = mysqli_query($koneksi,"select datainvestor.nama_lengkap, datainvestor.status from datainvestor where datainvestor.email='$namaadmin'");
 $data = mysqli_fetch_assoc($login);
 $nama = $data['nama_lengkap'];
 $status = $data['status'];
+$namaadmin = $_SESSION['email'];
+$result = mysqli_query($koneksi,"select id,name,image from umkm");
 
 ?>
 
@@ -309,18 +310,29 @@ $status = $data['status'];
             <?php } else {
 
             } ?>
+<!--            call-->
+
           <div class="row">
+              <?php while($user_data = mysqli_fetch_array($result)) { ?>
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
               <div class="card card-statistics">
-                <div class="card-body">
+                <div class="card-body" href="google.com">
                   <div class="clearfix">
-                    <div class="float-center text-center">
-                      <img src="screenshot.jpg" width="70px" height="70px" class="rounded-circle" style="margin-bottom: 10px;" >
-                      <p class="" style="margin-bottom: 1px;">Nama</p>
-                      <p class="" style="margin-bottom: 1px;">Kategory</p>
-                      <p class="" style="margin-bottom: 1px;">Tempat</p>
+                    <div class="float-center text-center" >
+                      <img src="../img/i<?php echo $user_data['image']; ?>.jpg" width="70px" height="70px" class="rounded-circle" style="margin-bottom: 10px;" >
+                      <p class="" style="margin-bottom: 1px;"></p>
+                      <p class="" style="margin-bottom: 1px;"><?php echo $user_data['name']; ?></p>
+                      <p class="" style="margin-bottom: 1px;"><?php echo $user_data['image']; ?></p>
                       <p class="" style="margin-bottom: 1px;">Filter</p>
                     </div>
+                      <a href="total-booking.php">
+                          <div class="panel-footer">
+                              <span class="pull-left">Lihat Detail</span>
+                              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                              <div class="clearfix"></div>
+                          </div>
+                      </a>
                   </div>
                   <p class="text-muted mt-3 mb-0">
                     <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 65% lower growth
@@ -328,7 +340,9 @@ $status = $data['status'];
                 </div>
               </div>
             </div>
+              <?php } ?>
           </div>
+
           <div class="row">
             <div class="col-lg-7 grid-margin stretch-card">
               <!--weather card-->
