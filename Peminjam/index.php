@@ -1,3 +1,9 @@
+<?php
+include '../action/tukangshare.php';
+include '../action/koneksi.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -160,7 +166,12 @@
           </li>
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <span class="profile-text">Hello, Richard V.Welsh !</span>
+              <span class="profile-text">Hello, <?php
+                  $namaadmin = $_SESSION['email'];
+                  $login = mysqli_query($koneksi,"select datainvestor.nama_lengkap from datainvestor where datainvestor.email='$namaadmin'");
+                  $data = mysqli_fetch_assoc($login);
+                  $nama = $data['nama_lengkap'];
+                  echo $nama?> </span>
               <img class="img-xs rounded-circle" src="images/faces/face1.jpg" alt="Profile image">
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
@@ -186,7 +197,7 @@
               <a class="dropdown-item">
                 Check Inbox
               </a>
-              <a class="dropdown-item">
+              <a class="dropdown-item" href="../action/logout.php">
                 Sign Out
               </a>
             </div>
