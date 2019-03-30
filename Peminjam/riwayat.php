@@ -2,13 +2,12 @@
 include '../action/tukangshare.php';
 include '../action/koneksi.php';
 $namaadmin = $_SESSION['email'];
-$login = mysqli_query($koneksi,"select id, datainvestor.nama_lengkap, datainvestor.status from datainvestor where datainvestor.email='$namaadmin'");
+$login = mysqli_query($koneksi,"select datainvestor.nama_lengkap, datainvestor.status from datainvestor where datainvestor.email='$namaadmin'");
 $data = mysqli_fetch_assoc($login);
-$id = $data['id'];
 $nama = $data['nama_lengkap'];
 $status = $data['status'];
 $namaadmin = $_SESSION['email'];
-$result = mysqli_query($koneksi,"select idumkm,name,alamat_lengkap ,sektor, image, description, dana, keuntungan, jw, grade  from umkm where status='belum'");
+$result = mysqli_query($koneksi,"select idumkm,name,alamat_lengkap ,sektor, image, description, dana, keuntungan, jw, grade  from umkm where idumkm = '1'");
 
 ?>
 
@@ -192,9 +191,15 @@ $result = mysqli_query($koneksi,"select idumkm,name,alamat_lengkap ,sektor, imag
                   </div>
                 </div>
               </a>
-                <a class="dropdown-item" href="riwayat.php?id=<?php echo $id?>">
-                    Riwayat Transaksi
-                </a>
+              <a class="dropdown-item mt-2">
+                Manage Accounts
+              </a>
+              <a class="dropdown-item">
+                Change Password
+              </a>
+              <a class="dropdown-item">
+                Check Inbox
+              </a>
               <a class="dropdown-item" href="../action/logout.php">
                 Sign Out
               </a>
@@ -325,9 +330,9 @@ $result = mysqli_query($koneksi,"select idumkm,name,alamat_lengkap ,sektor, imag
                       <p class="text-left" ><b>Jangka Waktu : <?php echo $user_data['jw']?> Minggu</b>  </p>
                     </div>
 
-                      <a href="detail-market.php?id=<?php echo $user_data['idumkm'] ?>">
-                          <div class="panel-footer">
-                              <span class="pull-left">Lihat Detail</span>
+                      <a href="">
+                          <div class="panel-footer btn btn-primary">
+                              <span class="pull-left">Terdanai</span>
                               <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
 
                               <div class="clearfix"></div>

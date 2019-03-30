@@ -13,7 +13,7 @@ include "koneksi.php";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($koneksi);
     }
-
+    header("location: ../peminjam/marketplace.php");
 
 
 mysqli_close($koneksi);

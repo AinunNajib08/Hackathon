@@ -335,16 +335,16 @@ $status = $data['status'];
                     <div class="float-left">
                       <i class="mdi mdi-receipt text-warning icon-lg"></i>
                     </div>
-                        <?php
-                      $curl = curl_init();
-                      curl_setopt($curl, CURLOPT_URL, 'https://partner.api.bri.co.id/sandbox/v1/inquiry/888801000157508');
-                      curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-                      $result = curl_exec($curl);
-                      curl_close($curl);
-
-                      $result = json_decode($result, true);
-                      var_dump($result)
-                      ?>
+<!--                        --><?php
+//                      $curl = curl_init();
+//                      curl_setopt($curl, CURLOPT_URL, 'https://partner.api.bri.co.id/sandbox/v1/inquiry/888801000157508');
+//                      curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+//                      $result = curl_exec($curl);
+//                      curl_close($curl);
+//
+//                      $result = json_decode($result, true);
+//                      var_dump($result)
+//                      ?>
                     <div class="float-right">
                       <p class="mb-0 text-right">Nilai Dialokasikan</p>
                       <div class="fluid-container">
