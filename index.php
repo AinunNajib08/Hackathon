@@ -41,7 +41,7 @@
             <nav class="navbar navbar-expand-lg navbar-light main_box">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.php"><img src="img/fav.jpg" alt=""></a>
+                    <a class="navbar-brand logo_h" href="index.php"><img src="img/icon.jpg" style="width:170px" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -167,7 +167,7 @@
                                 <p class="card-text">"Saya ingin mendapatkan inverstor untuk mendanai tas
                                     saya dikarenakan kian hari semakin mahal dan
                                     permintaan semakin banyak"</p>
-                                <a href="#" class="btn btn-primary">kunjungi</a>
+
                             </div>
                         </div>
                     </div>

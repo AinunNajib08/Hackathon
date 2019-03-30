@@ -41,8 +41,7 @@
             <nav class="navbar navbar-expand-lg navbar-light main_box">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand logo_h" href="index.php"><img src="img/icon.jpg" style="width:170px" alt=""></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -83,7 +82,7 @@
                         <div class="row single-slide align-items-center d-flex">
                             <div class="col-lg-12 col-md-12 justify-content-center">
                                 <div class="banner-content text-center justify-content-center">
-                                    <h1 class="text-light"> Jangan Takut<br>Untuk Memulai </h1>
+                                    <h1 class="text-light"> Permodalan adalah penopang<br>berlangsungnya ekonomi </h1>
                                     <div class="add-bag d-flex align-items-center text-center justify-content-center">
                                         <a class="btn-lg btn-secondary border border-white text-white rounded-pill " href="registrasi.php">Mulai Investasi</a>
                                     </div>
