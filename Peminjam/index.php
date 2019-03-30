@@ -8,6 +8,7 @@ $data = mysqli_fetch_assoc($login);
 $nama = $data['nama_lengkap'];
 $status = $data['status'];
 
+
 ?>
 
 <!DOCTYPE html>
@@ -334,8 +335,18 @@ $status = $data['status'];
                     <div class="float-left">
                       <i class="mdi mdi-receipt text-warning icon-lg"></i>
                     </div>
+                        <?php
+                      $curl = curl_init();
+                      curl_setopt($curl, CURLOPT_URL, 'https://partner.api.bri.co.id/sandbox/v1/inquiry/888801000157508');
+                      curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                      $result = curl_exec($curl);
+                      curl_close($curl);
+
+                      $result = json_decode($result, true);
+                      var_dump($result)
+                      ?>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Orders</p>
+                      <p class="mb-0 text-right">Nilai Dialokasikan</p>
                       <div class="fluid-container">
                         <h3 class="font-weight-medium text-right mb-0">3455</h3>
                       </div>
@@ -352,7 +363,7 @@ $status = $data['status'];
                       <i class="mdi mdi-poll-box text-success icon-lg"></i>
                     </div>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Sales</p>
+                      <p class="mb-0 text-right">Total Nilai Assets</p>
                       <div class="fluid-container">
                         <h3 class="font-weight-medium text-right mb-0">5693</h3>
                       </div>
@@ -369,7 +380,7 @@ $status = $data['status'];
                       <i class="mdi mdi-account-location text-info icon-lg"></i>
                     </div>
                     <div class="float-right">
-                      <p class="mb-0 text-right">Employees</p>
+                      <p class="mb-0 text-right">Pengembalian</p>
                       <div class="fluid-container">
                         <h3 class="font-weight-medium text-right mb-0">246</h3>
                       </div>
@@ -379,88 +390,6 @@ $status = $data['status'];
               </div>
             </div>
           </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                    <div class="card card-statistics">
-                        <div class="card-body">
-                            <div class="clearfix">
-                                <div class="float-left">
-                                    <i class="mdi mdi-cube text-danger icon-lg"></i>
-                                </div>
-                                <div class="float-right">
-                                    <p class="mb-0 text-right">Total Revenue</p>
-                                    <div class="fluid-container">
-                                        <h3 class="font-weight-medium text-right mb-0">$65,650</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-muted mt-3 mb-0">
-                                <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 65% lower growth
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                    <div class="card card-statistics">
-                        <div class="card-body">
-                            <div class="clearfix">
-                                <div class="float-left">
-                                    <i class="mdi mdi-receipt text-warning icon-lg"></i>
-                                </div>
-                                <div class="float-right">
-                                    <p class="mb-0 text-right">Orders</p>
-                                    <div class="fluid-container">
-                                        <h3 class="font-weight-medium text-right mb-0">3455</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-muted mt-3 mb-0">
-                                <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i> Product-wise sales
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                    <div class="card card-statistics">
-                        <div class="card-body">
-                            <div class="clearfix">
-                                <div class="float-left">
-                                    <i class="mdi mdi-poll-box text-success icon-lg"></i>
-                                </div>
-                                <div class="float-right">
-                                    <p class="mb-0 text-right">Sales</p>
-                                    <div class="fluid-container">
-                                        <h3 class="font-weight-medium text-right mb-0">5693</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-muted mt-3 mb-0">
-                                <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> Weekly Sales
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                    <div class="card card-statistics">
-                        <div class="card-body">
-                            <div class="clearfix">
-                                <div class="float-left">
-                                    <i class="mdi mdi-account-location text-info icon-lg"></i>
-                                </div>
-                                <div class="float-right">
-                                    <p class="mb-0 text-right">Employees</p>
-                                    <div class="fluid-container">
-                                        <h3 class="font-weight-medium text-right mb-0">246</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-muted mt-3 mb-0">
-                                <i class="mdi mdi-reload mr-1" aria-hidden="true"></i> Product-wise sales
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>index.php
           <div class="row">
             <div class="col-lg-7 grid-margin stretch-card">
               <!--weather card-->
@@ -823,6 +752,42 @@ $status = $data['status'];
   <!-- container-scroller -->
 
   <!-- plugins:js -->
+  <script>
+      function getPath(url) {
+          var pathRegex = /.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/;
+          var result = url.match(pathRegex);
+          return result && result.length > 1 ? result[1] : '';
+      }
+
+      function getQueryString(url) {
+          var arrSplit = url.split('?');
+          return arrSplit.length > 1 ? url.substring(url.indexOf('?')+1) : '';
+      }
+
+      function getAuthHeader(httpMethod, requestUrl, requestBody) {
+          var requestPath = getPath(requestUrl);
+          var queryString = getQueryString(requestUrl);
+
+          if (httpMethod == 'GET' || !requestBody) {
+              requestBody = '';
+          } else {
+              requestBody = requestBody;
+          }
+
+          var timestamp = new Date().toISOString();
+          postman.setEnvironmentVariable('timestamp', timestamp);
+
+          payload = 'path=' + requestPath + '&verb=' + httpMethod + '&token=Bearer ' + pm.environment.get('token') +
+              '&timestamp=' + timestamp + '&body=' + requestBody;
+          postman.setEnvironmentVariable('signature_payload', payload);
+
+
+          var hmacSignature = CryptoJS.enc.Base64.stringify(CryptoJS.HmacSHA256(payload, pm.environment.get('secret_key')));
+          return hmacSignature;
+      }
+
+      postman.setEnvironmentVariable('signature', getAuthHeader(request['method'], request['url'], request['data']));
+  </script>
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <script src="vendors/js/vendor.bundle.addons.js"></script>
   <!-- endinject -->
